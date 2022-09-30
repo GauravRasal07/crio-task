@@ -96,11 +96,17 @@ const UserDashboard = () => {
         <div className="dashboard_body text-center">
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={user.avatar} />
-            <Card.Body>
+            <Card.Body className="card_body">
               <Card.Title>
-                {user.first_name} {user.last_name}
+                <strong>Name: </strong>
+                <p>
+                  {user.first_name} {user.last_name}
+                </p>
               </Card.Title>
-              <Card.Title>{user.email}</Card.Title>
+              <Card.Title>
+                <strong>Email: </strong>
+                <p>{user.email}</p>
+              </Card.Title>
             </Card.Body>
           </Card>
         </div>
