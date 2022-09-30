@@ -1,38 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+
 .App {
-  text-align: center;
+  color: #1fb8a3;
+  background: #ffffff;
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_link {
+  background-color: #f7f7f7;
+  color: #1fb8a3 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dashboard_body {
+  padding: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.preloader {
+  position: fixed;
+  display: block;
+  width: 100wh;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.863);
+  z-index: 9999;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.preloader img {
+  height: auto;
+  width: 12%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preloader img::selection {
+  background: transparent;
 }
